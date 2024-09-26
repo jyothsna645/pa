@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:5px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            overflow: hidden;
+
+        }
+        .loader, .loder span{
+            width: 50em;
+            height: 50em;
+            border: 6.25em solid green;
+            font-size: 10px;
+            border-radius:2em; 
+            position:absolute;
+            mix-blend-mode: screen;
+
+        }
+        .loader, .loder span{
+            width: 25em;
+            height: 25em;
+            border: 5.25em solid green;
+            font-size: 10px;
+            border-radius:1em; 
+            position:absolute;
+            mix-blend-mode: screen;
+
+        }
+        .loder{
+            background-color: blue;
+            animation:rotating 2s linear infinite ;
+        }
+        @keyframes rotating{
+            to{
+                transform: rotate(2turn);
+
+            }
+        }
+        .loader span{
+            animation: de-rotating 4s linear infinite;
+        }   
+        @keyframes de-rotating{
+            form,to{
+                transform: rotate(0deg)scale(0.5);
+            }
+            50%{
+                transform: rotate(-180deg)scale(1.2);
+            }
+        }
+        .loader, .loder span{
+            width: 25em;
+            height: 25em;
+            border: 5.25em solid green;
+            font-size: 10px;
+            border-radius:1em; 
+            position:absolute;
+            mix-blend-mode: screen;
+
+        
+        }
+        @keyframes rotating{
+            to{
+                transform: rotate(7turn);
+
+            }
+        }
+        .loader span{
+            animation: de-rotating 4s linear infinite;
+        }   
+        @keyframes de-rotating{
+            form,to{
+                transform: rotate(0deg)scale(0.5);
+            }
+            50%{
+                transform: rotate(-180deg)scale(1.2);
+            }
+        }
+        .loder span:nth-child(3){
+            top:-5em;
+            left:-18em;
+            background-color: blue;
+
+        }       
+        .loder span:nth-child(4){
+            top:-5em;
+            left:-5em;
+            background-color: yellow;
+        }
+        .loder span:nth-child(5){
+            top:-5em;
+            left:-60em;
+            background-color: red;
+        } 
+        .loder span:nth-child(6){
+            top:-5em;
+            left:-5em;
+            background-color: black;
+        }
+            
+            
+        
+    </style>
+</head>
+
+<body>
+  <div class="loder">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>  
+</body>
+</html>
